@@ -2,6 +2,18 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+function showFirst(array, callback) {
+  callback(array[0]);
+}
+
+function showLength(list, cb) {
+  cb(list.length);
+}
+
+showFirst(items, (firstItem) => {
+  console.log(firstItem);
+})
+
 /* 
 
   // GIVEN THIS PROBLEM:
